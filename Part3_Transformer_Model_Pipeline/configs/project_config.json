@@ -1,0 +1,35 @@
+{
+  "project_name": "Member2_Persian_Stress_Regression",
+  "project_version": "1.0.0",
+  "random_seed": 42,
+  "target_column": "final_stress",
+  "id_column": "unique_post_id",
+  "role_column": "model_role",
+  "fold_column": "oof_fold",
+  "text_column": "content",
+  "input_files": {
+    "handoff": "member2_handoff.csv",
+    "manifest": "modeling_manifest_v2.csv",
+    "oof_template": "oof_predictions_template.csv",
+    "holdout_template": "holdout_predictions_template.csv"
+  },
+  "output_paths": {
+    "predictions": "outputs/predictions",
+    "metrics": "outputs/metrics",
+    "figures": "outputs/figures",
+    "explainability": "outputs/explainability",
+    "logs": "outputs/logs",
+    "processed": "data/processed",
+    "handoff": "data/handoff",
+    "models": "models"
+  },
+  "prediction_range": [1.0, 10.0],
+  "class_thresholds": [3.0, 5.0, 7.0],
+  "class_names": ["Low", "Moderate", "High", "Very High"],
+  "embargo_role": "embargo",
+  "train_role": "train",
+  "validation_role": "validation",
+  "test_role": "test",
+  "num_folds": 5,
+  "weight_column": "training_sample_weight"
+}

@@ -1,0 +1,19 @@
+{
+  "project": "Member1_Final_Reproducible_Project",
+  "executed_notebook": "notebooks/Member1_Full_Reproduction_executed.ipynb",
+  "total_notebook_cells": 27,
+  "code_cells": 13,
+  "successfully_executed_code_cells": 13,
+  "execution_errors": [],
+  "full_retrain_run": true,
+  "native_shap_executed": false,
+  "explainability_executed": "CatBoost global feature importance; native SHAP remains implemented as an optional mode",
+  "included_fold_models": 5,
+  "excluded_required_large_files": [],
+  "excluded_nonrequired_files": [
+    "historical exploratory datasets/notebooks",
+    "original upstream raw-text lexicon extractor (not supplied)"
+  ],
+  "artifact_verification_passed": true,
+  "tests_passed": 3
+}

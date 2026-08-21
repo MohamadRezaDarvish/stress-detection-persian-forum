@@ -1,0 +1,92 @@
+{
+  "status": "complete",
+  "dataset_hash": "f9b1810e611cf7b7c25ea3e15c4f4145a1df7b92435c2953b72e088a89f7e109",
+  "seed": 20260804,
+  "ratios": {
+    "train": 0.7,
+    "val": 0.15,
+    "test": 0.15
+  },
+  "rows": 5615,
+  "connected_components": 3622,
+  "largest_component_sizes": [
+    63,
+    42,
+    28,
+    24,
+    17,
+    15,
+    13,
+    13,
+    12,
+    12,
+    12,
+    11,
+    10,
+    10,
+    10,
+    9,
+    9,
+    9,
+    9,
+    9
+  ],
+  "assignment_objective": 0.41640301194364504,
+  "split_counts": {
+    "train": 4106,
+    "val": 754,
+    "test": 755
+  },
+  "evaluation_sources": [
+    "active_dual",
+    "original_dual"
+  ],
+  "evaluation_class_counts": {
+    "train": {
+      "Moderate": 311,
+      "Low": 1377,
+      "High": 291,
+      "Very High": 116
+    },
+    "val": {
+      "Moderate": 67,
+      "Low": 297,
+      "High": 63,
+      "Very High": 25
+    },
+    "test": {
+      "Low": 297,
+      "High": 63,
+      "Very High": 26,
+      "Moderate": 67
+    }
+  },
+  "label_source_counts": {
+    "train": {
+      "active_dual": 699,
+      "active_p2_calibrated": 1561,
+      "original_p1_high_selected": 450,
+      "original_dual": 1396
+    },
+    "val": {
+      "active_p2_calibrated": 217,
+      "active_dual": 150,
+      "original_p1_high_selected": 85,
+      "original_dual": 302
+    },
+    "test": {
+      "active_p2_calibrated": 217,
+      "active_dual": 151,
+      "original_p1_high_selected": 85,
+      "original_dual": 302
+    }
+  },
+  "minimum_eval_per_class": 25,
+  "minimum_failures": [],
+  "leakage_guards": [
+    "author connected components",
+    "thread connected components",
+    "exact duplicate content connected components"
+  ],
+  "evaluation_scope": "safety-enriched labeled data; not a natural-prevalence website estimate"
+}

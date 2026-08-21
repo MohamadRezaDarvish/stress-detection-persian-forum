@@ -1,0 +1,11 @@
+{
+  "fold_counts": {
+    "0": 844,
+    "1": 844,
+    "2": 848,
+    "3": 847,
+    "4": 843
+  },
+  "source": "modeling_manifest_v2.csv",
+  "random_folds_created": false
+}

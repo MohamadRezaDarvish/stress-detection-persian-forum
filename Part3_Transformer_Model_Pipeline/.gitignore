@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+*_nbconvert_/
+
+# Large model weights (re-obtain via models/model_manifest.json or FULL_RETRAIN=True)
+models/fold_*/
+models/*.tar.gz
+*.safetensors
+
+# Modal
+.modal_token.json
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Generated outputs that are reproducible
+outputs/predictions/*.csv
+outputs/metrics/*.json
+outputs/logs/*.json
+outputs/explainability/*.json
+outputs/figures/*.png
+data/processed/*.json

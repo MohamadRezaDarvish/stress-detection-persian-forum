@@ -1,0 +1,321 @@
+{
+  "selected_candidate": "hybrid_catboost_rmse_depth3",
+  "validation": {
+    "continuous": {
+      "mae": 0.8347571273981981,
+      "rmse": 1.1335653634247302,
+      "pearson": 0.8576568926916365,
+      "spearman": 0.8184897611171976,
+      "prediction_min": 1.0,
+      "prediction_max": 7.756248314184626
+    },
+    "classification": {
+      "thresholds": [
+        3.0954385027019997,
+        4.905160815295,
+        6.4621351159455
+      ],
+      "accuracy": 0.7566371681415929,
+      "macro_f1": 0.6716789843118596,
+      "precision_by_class": {
+        "Low": 0.9194139194139194,
+        "Moderate": 0.38235294117647056,
+        "High": 0.6226415094339622,
+        "Very High": 0.7916666666666666
+      },
+      "recall_by_class": {
+        "Low": 0.8451178451178452,
+        "Moderate": 0.582089552238806,
+        "High": 0.5238095238095238,
+        "Very High": 0.76
+      },
+      "f1_by_class": {
+        "Low": 0.8807017543859649,
+        "Moderate": 0.46153846153846156,
+        "High": 0.5689655172413793,
+        "Very High": 0.7755102040816326
+      },
+      "support_by_class": {
+        "Low": 297,
+        "Moderate": 67,
+        "High": 63,
+        "Very High": 25
+      },
+      "recall_wilson_95": {
+        "Low": [
+          0.7995915878627492,
+          0.8818304501888047
+        ],
+        "Moderate": [
+          0.4626993150297929,
+          0.692576990443277
+        ],
+        "High": [
+          0.4027035643673724,
+          0.6421787594617299
+        ],
+        "Very High": [
+          0.5657031664457093,
+          0.8850368630659855
+        ]
+      },
+      "confusion_matrix": [
+        [
+          251,
+          43,
+          3,
+          0
+        ],
+        [
+          17,
+          39,
+          11,
+          0
+        ],
+        [
+          5,
+          20,
+          33,
+          5
+        ],
+        [
+          0,
+          0,
+          6,
+          19
+        ]
+      ],
+      "constraints_pass": true,
+      "failed_recall_constraints": []
+    },
+    "safety": {
+      "very_high_pr_auc": 0.7777083737640242,
+      "high_or_very_high_underprediction_rate": 0.8181818181818182,
+      "very_high_underprediction_rate": 0.88
+    }
+  },
+  "test": {
+    "continuous": {
+      "mae": 0.9173561401962931,
+      "rmse": 1.2459117070851304,
+      "pearson": 0.8332660848430848,
+      "spearman": 0.7900585067541652,
+      "prediction_min": 1.0,
+      "prediction_max": 7.676382095365387
+    },
+    "classification": {
+      "thresholds": [
+        3.0954385027019997,
+        4.905160815295,
+        6.4621351159455
+      ],
+      "accuracy": 0.7527593818984547,
+      "macro_f1": 0.6284199918889836,
+      "precision_by_class": {
+        "Low": 0.9154929577464789,
+        "Moderate": 0.35443037974683544,
+        "High": 0.5689655172413793,
+        "Very High": 0.625
+      },
+      "recall_by_class": {
+        "Low": 0.8754208754208754,
+        "Moderate": 0.417910447761194,
+        "High": 0.5238095238095238,
+        "Very High": 0.7692307692307693
+      },
+      "f1_by_class": {
+        "Low": 0.8950086058519794,
+        "Moderate": 0.3835616438356164,
+        "High": 0.5454545454545454,
+        "Very High": 0.6896551724137931
+      },
+      "support_by_class": {
+        "Low": 297,
+        "Moderate": 67,
+        "High": 63,
+        "Very High": 26
+      },
+      "recall_wilson_95": {
+        "Low": [
+          0.8330031552878001,
+          0.9082510617146218
+        ],
+        "Moderate": [
+          0.30742300955672297,
+          0.5373006849702071
+        ],
+        "High": [
+          0.4027035643673724,
+          0.6421787594617299
+        ],
+        "Very High": [
+          0.5794844592105632,
+          0.8896615059421671
+        ]
+      },
+      "confusion_matrix": [
+        [
+          260,
+          30,
+          6,
+          1
+        ],
+        [
+          20,
+          28,
+          16,
+          3
+        ],
+        [
+          2,
+          20,
+          33,
+          8
+        ],
+        [
+          2,
+          1,
+          3,
+          20
+        ]
+      ],
+      "constraints_pass": false,
+      "failed_recall_constraints": [
+        "Moderate"
+      ]
+    },
+    "safety": {
+      "very_high_pr_auc": 0.6427003644224578,
+      "high_or_very_high_underprediction_rate": 0.7191011235955056,
+      "very_high_underprediction_rate": 0.9230769230769231
+    }
+  },
+  "validation_gate": true,
+  "test_gate": false,
+  "gate_field_note": "The validation_gate and test_gate fields are retained for compatibility. They indicate whether all internal recall objectives were met; they are not deployment approval decisions.",
+  "validation_internal_targets_met": true,
+  "test_internal_targets_met": false,
+  "validation_internal_target_summary": {
+    "status": "all_internal_recall_targets_met",
+    "all_targets_met": true,
+    "passed_targets": [
+      "Low",
+      "Moderate",
+      "High",
+      "Very High"
+    ],
+    "failed_targets": [],
+    "passed_target_count": 4,
+    "total_target_count": 4,
+    "minimum_recall": {
+      "Low": 0.75,
+      "Moderate": 0.5,
+      "High": 0.5,
+      "Very High": 0.75
+    },
+    "observed_recall": {
+      "Low": 0.8451178451178452,
+      "Moderate": 0.582089552238806,
+      "High": 0.5238095238095238,
+      "Very High": 0.76
+    },
+    "interpretation": "These recall thresholds are project-defined evaluation objectives, not external clinical, regulatory, or universal deployment requirements. Not meeting every target does not by itself determine whether the system can be used as a human-in-the-loop monitoring overlay."
+  },
+  "test_internal_target_summary": {
+    "status": "3_of_4_internal_recall_targets_met",
+    "all_targets_met": false,
+    "passed_targets": [
+      "Low",
+      "High",
+      "Very High"
+    ],
+    "failed_targets": [
+      "Moderate"
+    ],
+    "passed_target_count": 3,
+    "total_target_count": 4,
+    "minimum_recall": {
+      "Low": 0.75,
+      "Moderate": 0.5,
+      "High": 0.5,
+      "Very High": 0.75
+    },
+    "observed_recall": {
+      "Low": 0.8754208754208754,
+      "Moderate": 0.417910447761194,
+      "High": 0.5238095238095238,
+      "Very High": 0.7692307692307693
+    },
+    "interpretation": "These recall thresholds are project-defined evaluation objectives, not external clinical, regulatory, or universal deployment requirements. Not meeting every target does not by itself determine whether the system can be used as a human-in-the-loop monitoring overlay."
+  },
+  "project_acceptance_status": "3_of_4_internal_recall_targets_met",
+  "deployment_status": "candidate_for_human_in_the_loop_risk_monitoring_overlay",
+  "deployment_interpretation": "The system can be evaluated as a private website overlay that scores new posts, aggregates risk over time for each user, and prioritizes potentially high-risk users for moderator or qualified professional review. It is not an autonomous diagnostic system and must not independently make medical-emergency decisions.",
+  "primary_safety_objective": {
+    "class": "Very High",
+    "recall": 0.7692307692307693,
+    "precision": 0.625,
+    "internal_recall_target": 0.75,
+    "internal_target_met": true,
+    "interpretation": "The principal project objective was to surface users who may be experiencing severe or dangerous stress for human review. On the locked test, the model identified 20 of 26 Very-High posts."
+  },
+  "operational_use_case": {
+    "mode": "human_in_the_loop_overlay",
+    "per_post_processing": [
+      "Generate the Member 1 tabular prediction.",
+      "Generate the Member 2 Persian text prediction.",
+      "Generate the fusion continuous stress score and operational class."
+    ],
+    "per_user_temporal_signals": [
+      "time-decayed mean stress",
+      "maximum recent stress",
+      "number of recent High or Very-High posts",
+      "posting frequency",
+      "increasing risk relative to the user's previous baseline",
+      "Member 1 and Member 2 disagreement"
+    ],
+    "example_alert_conditions": [
+      "one strongly predicted Very-High post",
+      "two or more Very-High posts in a recent period",
+      "three High or Very-High results among the last five posts",
+      "sustained elevated time-decayed stress",
+      "a rapid increase relative to the user's previous baseline"
+    ],
+    "response_path": [
+      "private prioritization in a moderator or support dashboard",
+      "human review of recent posts and model evidence",
+      "proportional supportive contact or professional review",
+      "further escalation only under an approved consent, privacy, and human-review protocol"
+    ]
+  },
+  "moderate_class_context": {
+    "status": "principal_classification_improvement_area",
+    "locked_test_recall": 0.417910447761194,
+    "internal_target": 0.5,
+    "locked_test_confusion": {
+      "predicted_Low": 20,
+      "predicted_Moderate": 28,
+      "predicted_High": 16,
+      "predicted_Very_High": 3
+    },
+    "interpretation": "Moderate errors occur in both directions, indicating overlap near both adjacent boundaries rather than a single one-sided threshold problem.",
+    "operational_mitigations": [
+      "use the continuous score rather than only the four-class label",
+      "aggregate multiple posts from the same user",
+      "monitor sustained or increasing risk",
+      "prioritize posts close to either Moderate boundary",
+      "review strong disagreement between the two base models",
+      "show recent posting history to the human reviewer"
+    ]
+  },
+  "further_work": [
+    "Perform focused qualitative analysis of Moderate-to-Low and Moderate-to-High errors.",
+    "Acquire new dual annotations near both Moderate boundaries.",
+    "Use author- and thread-diverse active-learning candidates.",
+    "Reserve a new untouched confirmation set for future model improvement.",
+    "Evaluate ordinal outputs for stress greater than 3, 5, and 7.",
+    "Measure alert volume, false-positive burden, and reviewer workload through offline replay.",
+    "Run a limited human-in-the-loop pilot.",
+    "Define consent, privacy, access-control, audit-log, and escalation procedures."
+  ]
+}

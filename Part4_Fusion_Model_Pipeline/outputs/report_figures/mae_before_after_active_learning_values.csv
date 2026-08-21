@@ -1,0 +1,7 @@
+﻿model,stage,mae,source
+Tabular,Before active learning,1.2306218275483443,"Historical comparison table, original tabular test model"
+Transformer,Before active learning,1.260425140386954,"Historical comparison table, original ParsBERT test model"
+Fusion,Before active learning,1.0328,Original pre-active-learning fusion metric recorded in project history
+Tabular,After active learning,1.2888909362071534,"Current leakage-safe Member 1 five-fold ensemble, locked test"
+Transformer,After active learning,0.9688719608723735,"Current deterministic Member 2 five-fold ensemble, locked test"
+Fusion,After active learning,0.9174,"Current final hybrid fusion, locked test; rounded display value"

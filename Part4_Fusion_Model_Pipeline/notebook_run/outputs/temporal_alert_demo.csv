@@ -1,0 +1,6 @@
+﻿timestamp,post_score,post_class,fast_score,sustained_score,baseline_score,immediate_alert,sustained_alert,repeated_alert,escalation_alert,cooldown_active,alert
+2026-08-06 09:00:00,3.2,Moderate,3.2,3.2,3.2,False,False,False,False,False,False
+2026-08-06 09:35:00,5.8,High,4.283512248551048,3.5278356700072298,3.243436132248208,False,False,False,False,False,False
+2026-08-06 10:10:00,6.7,High,5.2905484320774026,3.9278159078903894,3.3011821958189946,False,False,False,False,False,False
+2026-08-06 10:45:00,7.8,Very High,6.336325936304236,4.416062087208886,3.376340367012456,True,False,False,True,False,True
+2026-08-06 11:45:00,6.4,High,6.374730931076565,4.825347435097895,3.4624180873758115,False,False,True,True,False,True

@@ -1,0 +1,78 @@
+{
+  "project_name": "Member1 Final Reproducible Tabular Project",
+  "project_version": "3.0.0",
+  "random_seed": 42,
+  "target_column": "final_stress",
+  "class_column": "clinical_class",
+  "id_column": "unique_post_id",
+  "role_column": "model_role",
+  "fold_column": "oof_fold",
+  "weight_column": "training_sample_weight",
+  "group_columns": [
+    "group_id",
+    "author",
+    "thread_id",
+    "content_hash"
+  ],
+  "input_files": {
+    "handoff": "inputs/member1_handoff.csv.gz",
+    "manifest": "inputs/modeling_manifest_v2.csv",
+    "feature_contract": "inputs/member1_feature_contract.json",
+    "oof_template": "inputs/oof_predictions_template.csv",
+    "holdout_template": "inputs/holdout_predictions_template.csv"
+  },
+  "output_paths": {
+    "processed": "data/processed",
+    "folds": "data/folds",
+    "handoff": "data/handoff",
+    "models": "models",
+    "predictions": "outputs/predictions",
+    "metrics": "outputs/metrics",
+    "figures": "outputs/figures",
+    "explainability": "outputs/explainability",
+    "logs": "outputs/logs"
+  },
+  "prediction_range": [
+    1.0,
+    10.0
+  ],
+  "class_order": [
+    "Low",
+    "Moderate",
+    "High",
+    "Very High"
+  ],
+  "class_prediction_thresholds": [
+    2.9291385780536054,
+    4.265168169138052,
+    6.215482148488274
+  ],
+  "true_class_ranges": {
+    "Low": [
+      1.0,
+      3.0
+    ],
+    "Moderate": [
+      3.0,
+      5.0
+    ],
+    "High": [
+      5.0,
+      7.0
+    ],
+    "Very High": [
+      7.0,
+      10.0
+    ]
+  },
+  "number_of_folds": 5,
+  "full_retrain_default": true,
+  "run_native_shap_default": false,
+  "shap_sample_size": 200,
+  "acceptance_floor_final_fusion": {
+    "Low": 0.75,
+    "Moderate": 0.5,
+    "High": 0.5,
+    "Very High": 0.75
+  }
+}

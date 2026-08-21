@@ -1,0 +1,26 @@
+{
+  "model_name": "CatBoostRegressor",
+  "algorithm": "CatBoost gradient-boosted decision trees",
+  "loss_function": "RMSE",
+  "eval_metric": "RMSE",
+  "iterations": 558,
+  "depth": 8,
+  "learning_rate": 0.025,
+  "l2_leaf_reg": 10.0,
+  "random_strength": 0.3,
+  "bagging_temperature": 0.5,
+  "allow_writing_files": false,
+  "verbose": false,
+  "thread_count": 4,
+  "task_type": "CPU",
+  "number_of_folds": 5,
+  "fold_seed_rule": "project_random_seed + fold_index",
+  "training_weight_column": "training_sample_weight",
+  "categorical_feature_handling": "native CatBoost",
+  "validation_and_test_prediction": "mean of five fold models",
+  "oof_prediction": "exactly one held-out fold model per training row",
+  "prediction_clipping": [
+    1.0,
+    10.0
+  ]
+}

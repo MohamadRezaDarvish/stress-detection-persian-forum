@@ -1,0 +1,58 @@
+{
+  "model": "CatBoostRegressor",
+  "full_retrain": true,
+  "input_role_counts": {
+    "train": 4226,
+    "embargo": 484,
+    "test": 453,
+    "validation": 452
+  },
+  "fold_counts": {
+    "0": 844,
+    "1": 844,
+    "2": 848,
+    "3": 847,
+    "4": 843
+  },
+  "oof_coverage": 4226,
+  "validation_coverage": 452,
+  "test_coverage": 453,
+  "oof_metrics": {
+    "mae": 1.2663455745663572,
+    "rmse": 1.578170360662832,
+    "pearson": 0.6943086504982012,
+    "spearman": 0.6913879467096139,
+    "prediction_min": 1.0,
+    "prediction_max": 7.820622180149126,
+    "prediction_mean": 3.4851573712246506
+  },
+  "validation_metrics": {
+    "mae": 1.265716936219663,
+    "rmse": 1.5923921199644873,
+    "pearson": 0.6886423313852909,
+    "spearman": 0.6577221688761343,
+    "prediction_min": 1.0,
+    "prediction_max": 7.146048721896989,
+    "prediction_mean": 3.05841772903046
+  },
+  "test_metrics": {
+    "mae": 1.2888909362071534,
+    "rmse": 1.655571811605144,
+    "pearson": 0.6726567628825295,
+    "spearman": 0.6260997917935521,
+    "prediction_min": 1.0,
+    "prediction_max": 6.8436955311692405,
+    "prediction_mean": 3.1103180679791222
+  },
+  "generated_handoff_dir": "data/handoff",
+  "model_manifest": "models/model_manifest.json",
+  "future_inference_required_files": [
+    "models/fold_0/model.cbm ... models/fold_4/model.cbm",
+    "src/feature_engineering.py or data/processed/member1_preprocessor.joblib",
+    "all upstream metadata/count columns documented in member1_preprocessor_config.json"
+  ],
+  "limitations": [
+    "Tabular-only component does not meet every final-fusion recall floor.",
+    "Original raw-text positive/negative lexicon extractor was not supplied."
+  ]
+}

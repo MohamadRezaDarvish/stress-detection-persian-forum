@@ -1,0 +1,18 @@
+{
+  "phase1": {
+    "status": "complete",
+    "canonical_unique_posts": 5617,
+    "duplicate_ids_resolved": 5,
+    "exact_duplicate_content_groups": 14
+  },
+  "phase2": {
+    "status": "ready_not_run",
+    "reason": "The local 176 MB cleaned_full_ninisite_stress_proxy3.csv file is required.",
+    "script": "src/phase2_extract_enriched.py"
+  },
+  "phase3": {
+    "status": "ready_not_run",
+    "reason": "Final author/thread connected components require the Phase 2 enriched output.",
+    "script": "src/phase3_build_split_manifest.py"
+  }
+}

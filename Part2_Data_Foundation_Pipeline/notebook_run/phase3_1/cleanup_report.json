@@ -1,0 +1,29 @@
+{
+  "status": "complete",
+  "source_dataset_hash": "f9b1810e611cf7b7c25ea3e15c4f4145a1df7b92435c2953b72e088a89f7e109",
+  "seed": 20260804,
+  "rows_total": 5615,
+  "roles": {
+    "train": 4226,
+    "embargo": 484,
+    "test": 453,
+    "validation": 452
+  },
+  "rows_moved_from_non_eval_val_test_components_to_train": 120,
+  "embargo_rows": 484,
+  "oof_folds": 5,
+  "training_class_counts": {
+    "Low": 2257,
+    "Moderate": 948,
+    "High": 736,
+    "Very High": 285
+  },
+  "class_weight_method": "square-root inverse frequency",
+  "class_weight_map": {
+    "Low": 0.684177788873456,
+    "Moderate": 1.0556758388791745,
+    "High": 1.198107656482396,
+    "Very High": 1.9253616657292336
+  },
+  "training_sample_weight_mean": 1.0000000000000004
+}

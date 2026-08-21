@@ -1,0 +1,48 @@
+{
+  "project_version": "1.0.0",
+  "python_target": "3.12",
+  "seed": 20260804,
+  "score_clip": [
+    1.0,
+    10.0
+  ],
+  "authoritative_classes": {
+    "Low": "stress <= 3",
+    "Moderate": "3 < stress <= 5",
+    "High": "5 < stress <= 7",
+    "Very High": "stress > 7"
+  },
+  "minimum_recall": {
+    "Low": 0.75,
+    "Moderate": 0.5,
+    "High": 0.5,
+    "Very High": 0.75
+  },
+  "candidate_selection_priority": [
+    "all validation recall constraints must pass",
+    "maximize Very High precision",
+    "maximize macro F1",
+    "maximize High precision",
+    "minimize validation MAE"
+  ],
+  "primary_candidate": {
+    "family": "CatBoost hybrid regression",
+    "loss_function": "RMSE",
+    "iterations": 450,
+    "depth": 3,
+    "learning_rate": 0.035,
+    "l2_leaf_reg": 10,
+    "random_strength": 0.5,
+    "bootstrap_type": "Bayesian",
+    "bagging_temperature": 0.5
+  },
+  "input_contract": {
+    "train_member1": "OOF prediction",
+    "train_member2": "deterministic OOF prediction",
+    "validation_member1": "mean of five Member 1 fold models",
+    "validation_member2": "mean of five Member 2 fold models",
+    "test_member1": "locked mean of five Member 1 fold models",
+    "test_member2": "locked mean of five Member 2 fold models"
+  },
+  "test_policy": "The test set is evaluated only after candidate selection and validation threshold calibration are frozen. The generated package contains that one locked evaluation."
+}

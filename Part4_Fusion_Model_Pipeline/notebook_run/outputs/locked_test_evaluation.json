@@ -1,0 +1,17 @@
+{
+  "status": "locked_test_evaluated",
+  "evaluated_at_utc": "2026-08-06T13:40:17.369130+00:00",
+  "selected_candidate": "hybrid_catboost_rmse_depth3",
+  "thresholds": [
+    3.0954385027019997,
+    4.905160815295,
+    6.4621351159455
+  ],
+  "model_sha256": "b441032baa60ed370203120713e412c3595e85f05f34d695988b6df768726841",
+  "bundle_sha256_before_test_update": "d266c199d7322e3d9faa4226f852ac458e243ff6ca7716c728ff0b8b4afefbdf",
+  "test_prediction_sha256": "9edf97b35748b48b60238e1b968bc00acb0cc018e5514b56daf334e90f896d18",
+  "constraints_pass": false,
+  "failed_recall_constraints": [
+    "Moderate"
+  ]
+}

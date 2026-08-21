@@ -1,0 +1,9 @@
+﻿evaluation_split,clinical_class,available_rows,minimum_recall,minimum_correct_predictions,maximum_allowed_misses
+validation,Low,297,0.75,223,74
+validation,Moderate,67,0.5,34,33
+validation,High,63,0.5,32,31
+validation,Very High,25,0.75,19,6
+test,Low,297,0.75,223,74
+test,Moderate,67,0.5,34,33
+test,High,63,0.5,32,31
+test,Very High,26,0.75,20,6

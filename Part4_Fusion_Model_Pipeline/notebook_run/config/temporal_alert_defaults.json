@@ -1,0 +1,18 @@
+{
+  "status": "shadow-mode defaults; not clinically validated",
+  "half_life_minutes": {
+    "fast": 45,
+    "sustained": 180,
+    "baseline": 1440
+  },
+  "rules": {
+    "immediate_score": 7.5,
+    "sustained_score": 6.5,
+    "sustained_minimum_posts": 2,
+    "repeated_window_posts": 5,
+    "repeated_minimum_high_or_very_high": 3,
+    "escalation_fast_minus_baseline": 1.5,
+    "escalation_minimum_fast_score": 6.0
+  },
+  "cooldown_minutes": 60
+}

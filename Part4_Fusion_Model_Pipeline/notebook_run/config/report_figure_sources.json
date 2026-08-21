@@ -1,0 +1,52 @@
+{
+  "class_palette": {
+    "Low": "#4C78A8",
+    "Moderate": "#E3BA22",
+    "High": "#F58518",
+    "Very High": "#B44C6A"
+  },
+  "model_palette": {
+    "Tabular": "#4C78A8",
+    "Transformer": "#54A24B",
+    "Fusion": "#B279A2"
+  },
+  "active_learning_mae": [
+    {
+      "model": "Tabular",
+      "stage": "Before active learning",
+      "mae": 1.2306218275483443,
+      "source": "Historical comparison table, original tabular test model"
+    },
+    {
+      "model": "Transformer",
+      "stage": "Before active learning",
+      "mae": 1.260425140386954,
+      "source": "Historical comparison table, original ParsBERT test model"
+    },
+    {
+      "model": "Fusion",
+      "stage": "Before active learning",
+      "mae": 1.0328,
+      "source": "Original pre-active-learning fusion metric recorded in project history"
+    },
+    {
+      "model": "Tabular",
+      "stage": "After active learning",
+      "mae": 1.2888909362071534,
+      "source": "Current leakage-safe Member 1 five-fold ensemble, locked test"
+    },
+    {
+      "model": "Transformer",
+      "stage": "After active learning",
+      "mae": 0.9688719608723735,
+      "source": "Current deterministic Member 2 five-fold ensemble, locked test"
+    },
+    {
+      "model": "Fusion",
+      "stage": "After active learning",
+      "mae": 0.9174,
+      "source": "Current final hybrid fusion, locked test; rounded display value"
+    }
+  ],
+  "comparability_warning": "Historical pre-active-learning and current post-active-learning values use different split sizes, label pools and leakage controls. The comparison shows project-stage change, not a controlled causal estimate of active learning."
+}

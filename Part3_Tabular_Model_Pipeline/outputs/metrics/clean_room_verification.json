@@ -1,0 +1,11 @@
+{
+  "zip_extracted_to_empty_directory": true,
+  "notebook_run_from_first_to_last_cell": true,
+  "execution_mode": "FULL_RETRAIN=False (loaded supplied five fold models)",
+  "success_marker_found": true,
+  "execution_errors": 0,
+  "executed_code_cells": 13,
+  "absolute_paths_required_by_code": false,
+  "artifact_checks_passed": true,
+  "tests_passed": 3
+}

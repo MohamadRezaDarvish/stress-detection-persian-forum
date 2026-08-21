@@ -1,0 +1,37 @@
+{
+  "clinical_class_thresholds": [3.0, 5.0, 7.0],
+  "minimum_required_recall": {
+    "Low": 0.75,
+    "Moderate": 0.50,
+    "High": 0.50,
+    "Very High": 0.75
+  },
+  "annotation_consensus": {
+    "person1_weight": 1.7,
+    "person2_weight": 1.0,
+    "trusted_annotator": "person1",
+    "active_single_rater_calibration": "OLS Person2 to Person1 on the 1000 overlapping active-learning rows"
+  },
+  "provisional_label_weights": {
+    "original_dual": 1.0,
+    "original_p1_high_selected": 0.9,
+    "active_dual": 1.0,
+    "active_p2_calibrated": 0.65
+  },
+  "split": {
+    "seed": 20260804,
+    "train_ratio": 0.70,
+    "validation_ratio": 0.15,
+    "test_ratio": 0.15,
+    "minimum_evaluation_rows_per_class_per_holdout": 25,
+    "evaluation_sources": [
+      "original_dual",
+      "active_dual"
+    ],
+    "grouping": [
+      "author connected components",
+      "thread connected components",
+      "exact duplicate content connected components"
+    ]
+  }
+}

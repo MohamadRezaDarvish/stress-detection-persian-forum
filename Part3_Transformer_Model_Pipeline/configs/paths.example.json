@@ -1,0 +1,23 @@
+{
+  "_comment": "Optional path override for input files stored outside the standard inputs/ folder. Paths are relative to the project root; absolute paths are intentionally avoided.",
+  "inputs": {
+    "member2_handoff.csv": "inputs/member2_handoff.csv",
+    "modeling_manifest_v2.csv": "inputs/modeling_manifest_v2.csv",
+    "oof_predictions_template.csv": "inputs/oof_predictions_template.csv",
+    "holdout_predictions_template.csv": "inputs/holdout_predictions_template.csv"
+  },
+  "models": {
+    "fold_0": "models/fold_0",
+    "fold_1": "models/fold_1",
+    "fold_2": "models/fold_2",
+    "fold_3": "models/fold_3",
+    "fold_4": "models/fold_4"
+  },
+  "outputs": {
+    "predictions": "outputs/predictions",
+    "metrics": "outputs/metrics",
+    "figures": "outputs/figures",
+    "explainability": "outputs/explainability",
+    "logs": "outputs/logs"
+  }
+}

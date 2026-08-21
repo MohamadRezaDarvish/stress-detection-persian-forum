@@ -1,0 +1,6 @@
+{
+  "project_root": "<extract>/Member1_Final_Reproducible_Project",
+  "main_notebook": "notebooks/Member1_Full_Reproduction.ipynb",
+  "future_posts_input": "inputs/future_posts.csv",
+  "future_predictions_output": "outputs/predictions/future_member1_predictions.csv"
+}

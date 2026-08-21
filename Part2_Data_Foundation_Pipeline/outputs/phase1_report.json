@@ -1,0 +1,111 @@
+{
+  "status": "phase1_complete",
+  "class_thresholds": [
+    3.0,
+    5.0,
+    7.0
+  ],
+  "person1_weight": 1.7,
+  "person2_weight": 1.0,
+  "counts": {
+    "original_dual_rows": 2000,
+    "historical_fusion_rows": 2229,
+    "original_dual_in_historical_fusion": 1607,
+    "original_dual_removed_by_historical_undersampling": 393,
+    "recovered_original_p1_high_selected": 622,
+    "active_rows": 3000,
+    "active_dual_rows": 1000,
+    "active_p2_calibrated_rows": 2000,
+    "duplicate_ids_across_labeling_rounds": 5,
+    "canonical_unique_posts": 5617,
+    "annotation_history_rows": 10622
+  },
+  "canonical_source_counts": {
+    "active_dual": 1000,
+    "active_p2_calibrated": 1995,
+    "original_p1_high_selected": 622,
+    "original_dual": 2000
+  },
+  "canonical_class_counts": {
+    "Moderate": 1222,
+    "Low": 3029,
+    "High": 974,
+    "Very High": 392
+  },
+  "source_by_class_counts": {
+    "active_dual": {
+      "Moderate": 190,
+      "Low": 541,
+      "High": 178,
+      "Very High": 91
+    },
+    "active_p2_calibrated": {
+      "Low": 1058,
+      "Moderate": 514,
+      "Very High": 117,
+      "High": 306
+    },
+    "original_p1_high_selected": {
+      "High": 251,
+      "Moderate": 263,
+      "Very High": 108
+    },
+    "original_dual": {
+      "Low": 1430,
+      "High": 239,
+      "Moderate": 255,
+      "Very High": 76
+    }
+  },
+  "active_calibration": {
+    "method_reproducing_historical_labels": "OLS Person2->Person1 on 1000 overlaps, then weighted mean 1.7:1",
+    "person2_to_person1_slope": 0.6459265242978497,
+    "person2_to_person1_intercept": 0.5037576412178764,
+    "equivalent_person2_to_consensus_slope": 0.7770648486319793,
+    "equivalent_person2_to_consensus_intercept": 0.3171807370631073,
+    "cv_metrics": {
+      "identity": {
+        "mae_to_consensus": 0.6976296296296298,
+        "rmse_to_consensus": 0.9967257782820244,
+        "mae_to_person1": 1.108
+      },
+      "mean_shift": {
+        "mae_to_consensus": 0.664145925925926,
+        "rmse_to_consensus": 0.8243928009306835,
+        "mae_to_person1": 1.0745162962962964
+      },
+      "linear_to_consensus": {
+        "mae_to_consensus": 0.39131520892183386,
+        "rmse_to_consensus": 0.5345870576521919,
+        "mae_to_person1": 0.695692894081607
+      },
+      "linear_p2_to_p1_then_weighted": {
+        "mae_to_consensus": 0.3913152089218337,
+        "rmse_to_consensus": 0.5345870576521919,
+        "mae_to_person1": 0.6956928940816071
+      },
+      "isotonic_to_consensus": {
+        "mae_to_consensus": 0.3977797991769982,
+        "rmse_to_consensus": 0.5274446291934002,
+        "mae_to_person1": 0.6991294504087725
+      },
+      "ordinal_lookup": {
+        "mae_to_consensus": 0.3977797991769985,
+        "rmse_to_consensus": 0.5274446291934002,
+        "mae_to_person1": 0.6991294504087724
+      }
+    }
+  },
+  "duplicate_id_values": [
+    "308300129",
+    "337616795",
+    "380905300",
+    "394085325",
+    "thread_9675131_حسناامیدم_1401/08/22 22:43"
+  ],
+  "exact_duplicate_content_groups": 14,
+  "exact_duplicate_content_rows": 30,
+  "default_label_weights_are_provisional": true,
+  "phase2_required": "Run phase2_extract_enriched.py locally against cleaned_full_ninisite_stress_proxy3.csv.",
+  "phase3_blocker": "Final author/thread connected-component split requires Phase 2 enriched output."
+}

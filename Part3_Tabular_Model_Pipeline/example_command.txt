@@ -1,0 +1,1 @@
+python member1_predict.py --input inputs/future_posts.csv --package-dir . --output outputs/predictions/future_member1_predictions.csv

@@ -1,0 +1,33 @@
+{
+  "passed": true,
+  "checks": {
+    "fold_0_model_exists": true,
+    "fold_1_model_exists": true,
+    "fold_2_model_exists": true,
+    "fold_3_model_exists": true,
+    "fold_4_model_exists": true,
+    "exists::data/handoff/member1_oof_predictions.csv": true,
+    "exists::data/handoff/member1_validation_predictions.csv": true,
+    "exists::data/handoff/member1_test_predictions.csv": true,
+    "exists::outputs/metrics/member1_metrics.json": true,
+    "exists::outputs/figures/global_feature_importance.png": true,
+    "exists::outputs/explainability/catboost_global_feature_importance.csv": true,
+    "exists::models/model_manifest.json": true,
+    "oof_row_count": true,
+    "validation_row_count": true,
+    "test_row_count": true,
+    "oof_id_set": true,
+    "validation_id_set": true,
+    "test_id_set": true,
+    "oof_unique_ids": true,
+    "validation_unique_ids": true,
+    "test_unique_ids": true,
+    "oof_no_missing_prediction": true,
+    "validation_no_missing_prediction": true,
+    "test_no_missing_prediction": true,
+    "prediction_range_ok": true,
+    "no_role_id_overlap": true,
+    "validation_has_ensemble_std": true,
+    "test_has_ensemble_std": true
+  }
+}

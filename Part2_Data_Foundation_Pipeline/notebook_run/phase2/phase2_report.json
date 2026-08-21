@@ -1,0 +1,18 @@
+{
+  "raw_rows_scanned": 362017,
+  "canonical_labels_requested": 5617,
+  "enriched_rows_written": 5615,
+  "unresolved_rows": 2,
+  "unresolved_ids": [
+    "397068790",
+    "thread_11018093_رانندگی_1402/02/15 12:48"
+  ],
+  "target_ids_with_duplicate_source_rows": 21,
+  "match_status_counts": {
+    "unique_id_match": 5596,
+    "duplicate_id_resolved_exact_content": 19,
+    "ambiguous_duplicate_id_no_label_content": 2
+  },
+  "strict_mode": false,
+  "note": "Frozen successful Phase 2 result. Two ambiguous duplicate-ID rows were intentionally excluded. Set RAW_360K_PATH in the notebook to reproduce the streaming extraction."
+}

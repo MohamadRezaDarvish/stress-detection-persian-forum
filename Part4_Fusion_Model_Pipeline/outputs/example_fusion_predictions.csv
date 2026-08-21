@@ -1,0 +1,2 @@
+﻿unique_post_id,member1_prediction,member2_prediction,fusion_stress_score,fusion_clinical_class,distance_to_low_moderate_threshold,distance_to_moderate_high_threshold,distance_to_high_very_high_threshold
+example_001,3.2,4.1,4.079022851359923,Moderate,0.9835843486579234,-0.8261379639350768,-2.383112264585577

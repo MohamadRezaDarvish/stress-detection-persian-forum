@@ -1,0 +1,24 @@
+{
+  "_comment": "Checkpoint manifest for the 5 fine-tuned ParsBERT fold models.",
+  "base_checkpoint": "HooshvareLab/bert-fa-zwnj-base",
+  "architecture": "BertForSequenceClassification (num_labels=1, problem_type=regression)",
+  "num_folds": 5,
+  "fold_epochs": 5,
+  "max_length": 384,
+  "batch_size": 16,
+  "learning_rate": 2e-05,
+  "weight_decay": 0.01,
+  "optimizer": "AdamW",
+  "scheduler": "linear warmup (10%) -> linear decay",
+  "loss": "weighted_asymmetric_mse (under_prediction_penalty=1.75)",
+  "seed": 42,
+  "fold_models": [
+    {"fold": 0, "path": "models/fold_0", "files": ["config.json", "model.safetensors", "tokenizer/tokenizer.json", "tokenizer/tokenizer_config.json"]},
+    {"fold": 1, "path": "models/fold_1", "files": ["config.json", "model.safetensors", "tokenizer/tokenizer.json", "tokenizer/tokenizer_config.json"]},
+    {"fold": 2, "path": "models/fold_2", "files": ["config.json", "model.safetensors", "tokenizer/tokenizer.json", "tokenizer/tokenizer_config.json"]},
+    {"fold": 3, "path": "models/fold_3", "files": ["config.json", "model.safetensors", "tokenizer/tokenizer.json", "tokenizer/tokenizer_config.json"]},
+    {"fold": 4, "path": "models/fold_4", "files": ["config.json", "model.safetensors", "tokenizer/tokenizer.json", "tokenizer/tokenizer_config.json"]}
+  ],
+  "placement_instructions": "If these large checkpoint files are excluded from a ZIP distribution, place each fold's 4 files under models/fold_<i>/ as listed above. The notebook will fail with a clear error if a fold checkpoint is missing (it will NOT silently fall back to the base ParsBERT model).",
+  "sha256_archive_of_original": "6f5701c2044bd1709ce6db780e46684b2fd1d402dac6198709c4422286a89b60"
+}

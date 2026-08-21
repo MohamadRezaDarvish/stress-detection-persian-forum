@@ -1,0 +1,10 @@
+{
+  "status": "complete",
+  "selected_candidate": "hybrid_catboost_rmse_depth3",
+  "feature_profile": "hybrid",
+  "validation_constraints_pass": true,
+  "validation_failed_constraints": [],
+  "test_loaded_or_evaluated": false,
+  "model_sha256": "b441032baa60ed370203120713e412c3595e85f05f34d695988b6df768726841",
+  "bundle_sha256": "d266c199d7322e3d9faa4226f852ac458e243ff6ca7716c728ff0b8b4afefbdf"
+}

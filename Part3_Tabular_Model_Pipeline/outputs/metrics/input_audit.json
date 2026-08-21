@@ -1,0 +1,40 @@
+{
+  "total_rows": 5615,
+  "role_counts": {
+    "train": 4226,
+    "embargo": 484,
+    "test": 453,
+    "validation": 452
+  },
+  "fold_counts": {
+    "0": 844,
+    "1": 844,
+    "2": 848,
+    "3": 847,
+    "4": 843
+  },
+  "feature_count": 67,
+  "group_separation": {
+    "group_id": {
+      "cross_modeled_roles": 0,
+      "cross_train_folds": 0
+    },
+    "author": {
+      "cross_modeled_roles": 0,
+      "cross_train_folds": 0
+    },
+    "thread_id": {
+      "cross_modeled_roles": 0,
+      "cross_train_folds": 0
+    },
+    "content_hash": {
+      "cross_modeled_roles": 0,
+      "cross_train_folds": 0
+    }
+  },
+  "duplicate_ids": 0,
+  "embargo_used": false,
+  "train_only_fitting": true,
+  "training_weight_column": "training_sample_weight",
+  "input_contract_passed": true
+}

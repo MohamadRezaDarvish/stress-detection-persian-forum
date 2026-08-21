@@ -1,0 +1,16 @@
+﻿unique_post_id,rank,feature,shap_contribution
+example_001,1,member2_prediction,0.4345414246173988
+example_001,2,base_mean,0.22197317380790899
+example_001,3,post_neg_emoji,-0.0335032729045604
+example_001,4,post_temp_neg_ratio,-0.03283718408770138
+example_001,5,post_pos_emoji,0.030545121074728388
+example_001,6,sub_category,-0.023614983438089807
+example_001,7,base_difference,0.020814151696743388
+example_001,8,log1p_user_post_count,0.018347399864746386
+example_001,9,has_reply,-0.017881078877764148
+example_001,10,is_starter,0.015982129439244017
+example_001,11,post_neg_count_temp,-0.015602682323394186
+example_001,12,user_post_count,0.013814792100541937
+example_001,13,posted_day,0.013242221777652228
+example_001,14,log1p_posts_per_account_year,0.012804057627997472
+example_001,15,posts_per_account_year,0.010049435100829666

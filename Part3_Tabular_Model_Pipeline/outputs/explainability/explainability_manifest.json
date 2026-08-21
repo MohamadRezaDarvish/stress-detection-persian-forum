@@ -1,0 +1,6 @@
+{
+  "method": "CatBoost feature importance",
+  "feature_count": 67,
+  "used_for_formal_feature_selection": false,
+  "shap_run": false
+}

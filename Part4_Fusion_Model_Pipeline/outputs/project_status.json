@@ -1,0 +1,67 @@
+{
+  "phase4_base_output_integration": "complete",
+  "phase5_fusion_candidate_training": "complete",
+  "phase6_constrained_calibration": "complete",
+  "phase7_locked_test_evaluation": "complete",
+  "phase8_explainability_temporal_active_learning": "complete",
+  "selected_candidate": "hybrid_catboost_rmse_depth3",
+  "validation_gate": true,
+  "test_gate": false,
+  "gate_field_note": "These gate fields refer only to the four internal project recall objectives.",
+  "validation_internal_targets_met": true,
+  "test_internal_targets_met": false,
+  "test_failed_internal_targets": [
+    "Moderate"
+  ],
+  "project_acceptance_status": "3_of_4_internal_recall_targets_met",
+  "deployment_status": "candidate_for_human_in_the_loop_risk_monitoring_overlay",
+  "deployment_interpretation": "The system can be evaluated as a private website overlay that scores new posts, aggregates risk over time for each user, and prioritizes potentially high-risk users for moderator or qualified professional review. It is not an autonomous diagnostic system and must not independently make medical-emergency decisions.",
+  "primary_safety_objective": {
+    "class": "Very High",
+    "recall": 0.7692307692307693,
+    "precision": 0.625,
+    "internal_recall_target": 0.75,
+    "internal_target_met": true,
+    "interpretation": "The principal project objective was to surface users who may be experiencing severe or dangerous stress for human review. On the locked test, the model identified 20 of 26 Very-High posts."
+  },
+  "moderate_class_context": {
+    "status": "principal_classification_improvement_area",
+    "locked_test_recall": 0.417910447761194,
+    "internal_target": 0.5,
+    "locked_test_confusion": {
+      "predicted_Low": 20,
+      "predicted_Moderate": 28,
+      "predicted_High": 16,
+      "predicted_Very_High": 3
+    },
+    "interpretation": "Moderate errors occur in both directions, indicating overlap near both adjacent boundaries rather than a single one-sided threshold problem.",
+    "operational_mitigations": [
+      "use the continuous score rather than only the four-class label",
+      "aggregate multiple posts from the same user",
+      "monitor sustained or increasing risk",
+      "prioritize posts close to either Moderate boundary",
+      "review strong disagreement between the two base models",
+      "show recent posting history to the human reviewer"
+    ]
+  },
+  "current_operational_stage": "ready_for_offline_replay_and_a_limited_human_in_the_loop_overlay_pilot",
+  "required_before_real_world_operation": [
+    "approved consent and privacy policy",
+    "restricted moderator or professional dashboard access",
+    "documented human-review and escalation workflow",
+    "audit logging",
+    "offline replay to estimate alert volume and false-positive burden",
+    "limited monitored pilot"
+  ],
+  "required_next_evidence_for_future_model_improvement": "a fresh untouched dual-annotated confirmation set",
+  "further_work": [
+    "Perform focused qualitative analysis of Moderate-to-Low and Moderate-to-High errors.",
+    "Acquire new dual annotations near both Moderate boundaries.",
+    "Use author- and thread-diverse active-learning candidates.",
+    "Reserve a new untouched confirmation set for future model improvement.",
+    "Evaluate ordinal outputs for stress greater than 3, 5, and 7.",
+    "Measure alert volume, false-positive burden, and reviewer workload through offline replay.",
+    "Run a limited human-in-the-loop pilot.",
+    "Define consent, privacy, access-control, audit-log, and escalation procedures."
+  ]
+}

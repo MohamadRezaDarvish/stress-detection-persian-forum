@@ -1,0 +1,17 @@
+[
+  {
+    "file": "C:\\Users\\Asus\\Desktop\\datasience\\final_report\\Member2_Final_Reproducible_Project\\outputs\\predictions\\member2_oof_predictions_deterministic.csv",
+    "sha256": "6bfbade269fc86ecb2487e4bfa936b603ba1b16bd7fa3c48dba1f6f6cc917450",
+    "size": 216700
+  },
+  {
+    "file": "C:\\Users\\Asus\\Desktop\\datasience\\final_report\\Member2_Final_Reproducible_Project\\outputs\\predictions\\member2_validation_predictions_fold_ensemble.csv",
+    "sha256": "b292986e36ba2ba638c254c324333080989ad93fbe0d9558f471ac3e902227e4",
+    "size": 75875
+  },
+  {
+    "file": "C:\\Users\\Asus\\Desktop\\datasience\\final_report\\Member2_Final_Reproducible_Project\\outputs\\predictions\\member2_test_predictions_fold_ensemble.csv",
+    "sha256": "1708366169559ad53749cf84ed54dc0aee2ceb60001c14b72e699cebab454653",
+    "size": 73409
+  }
+]

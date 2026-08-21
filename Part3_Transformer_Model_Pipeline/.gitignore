@@ -22,9 +22,9 @@ models/*.tar.gz
 Thumbs.db
 
 # Generated outputs that are reproducible
-outputs/predictions/*.csv
-outputs/metrics/*.json
-outputs/logs/*.json
-outputs/explainability/*.json
-outputs/figures/*.png
-data/processed/*.json
+# outputs/predictions/*.csv
+# outputs/metrics/*.json
+# outputs/logs/*.json
+# outputs/explainability/*.json
+# outputs/figures/*.png
+# data/processed/*.json

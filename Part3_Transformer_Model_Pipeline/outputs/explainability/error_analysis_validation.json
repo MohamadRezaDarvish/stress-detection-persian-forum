@@ -1,0 +1,32 @@
+{
+  "pct_under_total": 36.06194690265487,
+  "pct_over_total": 63.93805309734514,
+  "mean_abs_err_under": 0.7552271513363578,
+  "mean_abs_err_over": 0.8637436038635335,
+  "band_error": {
+    "Low": {
+      "n": 297,
+      "mean_error": 0.5809289906176268,
+      "mean_abs_error": 0.7420538410847287,
+      "pct_under": 24.242424242424242
+    },
+    "Moderate": {
+      "n": 67,
+      "mean_error": 0.11238309900822611,
+      "mean_abs_error": 1.0207738448006467,
+      "pct_under": 44.776119402985074
+    },
+    "High": {
+      "n": 63,
+      "mean_error": -0.5702957274421808,
+      "mean_abs_error": 0.9830537512329027,
+      "pct_under": 68.25396825396825
+    },
+    "Very High": {
+      "n": 25,
+      "mean_error": -0.7046828467757607,
+      "mean_abs_error": 0.8803880981162738,
+      "pct_under": 72.0
+    }
+  }
+}

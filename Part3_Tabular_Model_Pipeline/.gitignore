@@ -2,5 +2,4 @@ __pycache__/
 *.py[cod]
 .ipynb_checkpoints/
 .venv/
-catboost_info/
-outputs/logs/*.log
+

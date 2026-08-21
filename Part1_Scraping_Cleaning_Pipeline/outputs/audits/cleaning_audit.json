@@ -1,0 +1,79 @@
+{
+  "input_rows": 414994,
+  "persian_backend": "hazm",
+  "after_nonempty_content": 413180,
+  "after_raw_three_word_filter": 362026,
+  "after_optional_author_filter": 362026,
+  "content_globally_normalized": false,
+  "category_repair": {
+    "mode": "cached_historical_replay",
+    "network_requests": 0,
+    "cache_loaded": true,
+    "updated_rows": 99442,
+    "remaining_missing_category": 0,
+    "remaining_missing_sub_category": 0,
+    "cache_rows": 108994,
+    "filled_category_values": 99442,
+    "filled_sub_category_values": 99442,
+    "expected_historical_updates": 99442
+  },
+  "missing_thread_title_before_drop": 9,
+  "after_title_filter": 362017,
+  "gender_code_before_recovery": {
+    "1": 335182,
+    "-2": 19117,
+    "-1": 7718
+  },
+  "gender_recovery": {
+    "mode": "historical_male_profile_cache_replay",
+    "network_requests": 0,
+    "male_cache_loaded": true,
+    "male_cache_profiles": 1437,
+    "rows_marked_male_from_cache": 6535,
+    "remaining_assumed_female_rows": 20300,
+    "final_male_rows": 6535,
+    "final_female_rows": 355482,
+    "final_unresolved_rows": 0,
+    "final_gender_source_counts": {
+      "original_female": 335182,
+      "remaining_unresolved_assumed_female_after_historical_recovery": 20300,
+      "historical_scraped_male_profile_replay": 6535
+    },
+    "expected_historical_final_male_rows": 6535,
+    "male_row_count_matches_historical_final_dataset": true
+  },
+  "gender_code_after_recovery": {
+    "1": 355482,
+    "0": 6535
+  },
+  "profile_url_dropped_after_gender_recovery": true,
+  "rows_before": 362017,
+  "rows_after": 362017,
+  "conflicting_post_ids": 329,
+  "conflicting_post_id_examples": [
+    "335378278.0",
+    "335556149.0",
+    "335569281.0",
+    "335569460.0",
+    "335778316.0",
+    "335816282.0",
+    "335867599.0",
+    "336161284.0",
+    "336161320.0",
+    "336316563.0",
+    "336359792.0",
+    "336359882.0",
+    "336360148.0",
+    "336360371.0",
+    "337209694.0",
+    "337252617.0",
+    "337252847.0",
+    "337298116.0",
+    "337298310.0",
+    "337298372.0"
+  ],
+  "output_rows": 362017,
+  "unique_post_id_unique": true,
+  "historical_reference_rows_after_text_filter": 362026,
+  "historical_reference_final_rows": 362017
+}

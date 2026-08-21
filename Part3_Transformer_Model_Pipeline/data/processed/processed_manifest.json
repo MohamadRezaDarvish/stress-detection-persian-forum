@@ -1,0 +1,15 @@
+{
+  "rows_processed": 5615,
+  "train": 4226,
+  "validation": 452,
+  "test": 453,
+  "embargo": 484,
+  "columns_used": [
+    "content",
+    "final_stress",
+    "training_sample_weight",
+    "clinical_class",
+    "oof_fold"
+  ],
+  "text_cleaning": "hazm.Normalizer"
+}

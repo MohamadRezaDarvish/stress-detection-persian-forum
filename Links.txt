@@ -1,0 +1,8 @@
+Folds(for Part3_Transformer):
+https://my.sharif.edu/s/r6XoqKd9ADkNdPc
+
+Datasets:
+https://my.sharif.edu/s/CqLamMfGnYtK64P
+
+GitHub Repository Link:
+https://github.com/MohamadRezaDarvish/stress-detection-persian-forum
